@@ -60,7 +60,7 @@ export default class Home extends React.Component {
                 {hasIntro && (
                     <div className="intro">
                         <div className="inner-md">
-                            {introContent && <div className="intro-text">{markdownify(introContent)}</div>}
+                            {introContent && <div className="intro-text">{`$`}</div>}
                             {!_.isEmpty(introActions) && (
                                 <div className="intro-cta">
                                     {_.map(introActions, (action, index) => <ActionLink key={index} action={action} />)}
